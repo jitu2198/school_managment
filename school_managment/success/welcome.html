@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html  oncontextmenu="window.alert('right click is not allowed');return false">
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="welcome.css">
+    <script src="https://kit.fontawesome.com/e8019bc349.js"></script>
+
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="welcome.js"></script>
+      <script src="../js/validation.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+    <div class="dark container-fluid">
+        <div class="row ">
+            <div class="col-md-3  py-4">
+                <div class=" bg-light col-12 py-3 w-100 " style="height: auto">
+                    <div class="d-flex  justify-content-center ">
+                        <div class="logo-img border  border-dark d-flex  flex-column align-items-center" style="width: 45% ;align-content: center">
+
+                            <img src="../images/management-system-learning65.jpg " class="upload-logo w-100">
+                            <button class="btn bg-info text-light upload-logo-btn">Upload Logo</button>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-2 flex-column align-items-center border-bottom border-dark justify-content-center ">
+                        <h5 class="school-name"></h5>
+                        <span class="tag-line"></span>
+                    </div>
+
+                    <div class="d-flex flex-column align-items-end justify-content-center ">
+
+                        <div class="row w-75  mt-1 border-bottom border-dark border-left border-dark " style="cursor: pointer"><span class="Take-Admission-p   input-group-text border-0 border-bottom border-dark bg-white">
+                                <h6 id="" class="text-info">Take Admission</h6>
+                            </span></div>
+                        <div class="row w-75  mt-1 border-bottom border-dark border-left border-dark " style="cursor: pointer"><span class="Get-Invoice-p  input-group-text border-0 border-bottom border-dark bg-white">
+                                <h6 class="text-info">Get Invoice </h6>
+                            </span></div>
+                        <div class="row w-75  mt-1 border-bottom border-dark border-left border-dark " style="cursor: pointer"><span class="Find-Student-p  input-group-text border-0 border-bottom border-dark bg-white">
+                                <h6 class="text-info">Find Student</h6>
+                            </span></div>
+                        <div class="row w-75  mt-1 border-bottom border-dark border-left border-dark " style="cursor: pointer"><span class="Set-Class-Fee-p  input-group-text border-0 border-bottom border-dark bg-white">
+                                <h6 class="text-info">Set Classes Fee</h6>
+                            </span></div>
+                        <div class="row w-75  mt-1 border-bottom border-dark border-left border-dark " style="cursor: pointer"><span class="Check-Class-Fee-p  input-group-text border-0 border-bottom border-dark bg-white">
+                                <h6 class="text-info">Check Classes Fee</h6>
+                            </span></div>
+                        <div class="row w-75  mt-1 border-bottom border-dark border-left border-dark " style="cursor: pointer"><span class="Upload-Signature-p  input-group-text border-0 border-bottom border-dark bg-white">
+                                <h6 class="text-info">Upload Signature</h6>
+                            </span></div>
+                        <div class="row w-75  mt-1 border-bottom border-dark border-left border-dark " style="cursor: pointer"><span class=" Find-No-of-Student input-group-text border-0 border-bottom border-dark bg-white">
+                                <h6 class="text-info"> No. of Student's in classes</h6>
+                            </span></div>
+                        <div class="row w-75  mt-1 border-bottom border-dark border-left border-dark " style="cursor: pointer">
+                            <div class="col-6">
+                        <span class="moree  input-group-text border-0 border-bottom border-dark bg-white">
+                                <h6 class="text-info">More</h6>
+                            </span>
+                            </div>
+                              <div class="col-6 border-left border-dark">
+                            <span class="log-out-school  input-group-text border-0 border-bottom border-dark bg-white">
+                                <h6 class="text-info  ">Log out</h6>
+                            </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-9 py-4">
+                <div class="row">
+                    <div class="col-md-6 bg-white edit_data_animate">
+                        <img src="../images/check_fee.png" style="position: absolute; top: 0; right: 0;" class="float-right p-0 m-0" style="cursor: pointer" width="35%" id="check-fee-img">
+                        <h5 class="my-4">SET FEE FOR CLASSES</h5>
+                        <div class="input-group mb-4 ">
+                            <div class="input-group-prepend "><span class="input-group-text  m-0">Enter class</span></div>
+                            <input class="form-control class-name " placeholder=" ex: 7" type="text" name="class-name">
+                        </div>
+                        <div class="add-field-area">
+
+                            <div class="row m-2">
+                                <div class="col-4"><span class="input-group-text w-100 m-0">Enter fee name</span></div>
+                                <div class="col-4"><span class="input-group-text  m-0">Enter fee</span></div>
+                                <div class="col-4"><span class="input-group-text  m-0">Enter time </span></div>
+                            </div>
+
+                            <div class="input-group mb-2"><input class="  course-name form-control" placeholder="Ex- Hostel fee" type="text" name="hostel-fee"><input class="ml-2  course-fee form-control" placeholder="Ex- 500" type="number" name="course fee"><input class=" ml-2 course-time form-control" placeholder="Monthly/yearly" type="text" name="time"></div>
+                        </div>
+                        <center>
+                            <div class="btn-group mb-4">
+                                <button class="btn btn-primary  text-light add-field-btn"><i class="fas fa-plus"></i> &nbsp Add field</button>
+                                <button class="btn btn-danger ml-2 text-light set-fee-btn ">Set fee now</button>
+                            </div>
+                        </center>
+                    </div>
+                    <div class="col-md-6 p-0">
+
+                        <div class="bg-white mx-auto take_data_animate position px-4 pt-2 pb-4" style="width:95%">
+                            <div class="row">
+                                <img src="../images/take_adm.png" style="position: absolute; top: 0; left: 2.2%;" class="float-left p-0 m-0" style="cursor: pointer" width="35%" id="check-fee-img">
+                                <div class="col-3 p-0m-0"> </div>
+                                <div class="col-6">
+                                    <h5 class="my-2  float-right">TAKE ADMISSION</h5>
+                                </div>
+                                <div class="col-3">
+                                    <div class=" float-right"><span class="input-group-text bg-dark text-light admission-number"></span></div>
+                                </div>
+
+
+
+                            </div>
+                            <form style="font-size: 13px; " class="take_a_form">
+                                <div class="row">
+                                    <div class="col-3 p-0 d-flex flex-column align-items-center " style=" pointer:cursor">
+                                        <img src="../images/upload_pic.png" style="width:100%; " class="upload-pic border border-primary">
+                                        <button class="btn bg-info text-light upload-photo-btn mt-1" type="button">Upload Photo</button>
+
+                                    </div>
+                                    <div class="col-9 mt-2">
+
+                                        <div class="input-group mb-3 ">
+                                            <div class="input-group-prepend " style="width: 35%;font-size: 13px !important; "><span class="input-group-text m-0" style="width: 100%;font-size: 13px; ">Student name</span></div>
+                                            <input class="form-control s-name " required="required" placeholder="Student name" type="text" name="s_name">
+                                        </div>
+
+
+                                        <div class="input-group mb-3 ">
+                                            <div class="input-group-prepend " style="width: 35%;font-size: 13px !important; "><span class="input-group-text  m-0" style="width: 100%;font-size: 13px; ">Father name</span></div>
+                                            <input class="form-control f-name " required="required" placeholder="Father  name" type="text" name="f_name">
+                                        </div>
+
+                                        <div class="input-group mb-3 ">
+                                            <div class="input-group-prepend " style="width: 35%;font-size: 13px !important; "><span class="input-group-text  m-0" style="width: 100%;font-size: 13px; ">Mother name</span></div>
+                                            <input class="form-control m-name " required="required" placeholder="Mother name" type="text" name="m_name">
+                                        </div>
+
+
+
+
+                                    </div>
+
+                                </div>
+                                <div class="row completeform">
+                                    <div class="input-group mb-3  p-1 m-0 col-6">
+                                        <div class="input-group-prepend " style="width: 45%;font-size: 13px !important; "><span class="input-group-text  m-0">Student's Mo.</span></div>
+                                        <input class="form-control s-mo-no " required="required" placeholder="Student's Mo." type="number" name="s-mo">
+                                    </div>
+                                    <div class="input-group mb-3 p-1 col-6">
+                                        <div class="input-group-prepend " style="width: 45%;font-size: 13px !important; "><span class="input-group-text  m-0">Father's Mo.</span></div>
+                                        <input class="form-control f-mo-no " required="required" placeholder="Father's Mo." type="number" name="f-mo">
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend"> <span class="input-group-text bg-warning border border-warning">Gender</span></div>
+                                            <select class="form-control border border-warning gender" required=" required">
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="input-group">
+                                            <input type="text" name="date" id="date" required="required" class="form-control border border-warning" placeholder="dd/mm/yyyy">
+                                            <div class="input-group-append"> <span class="input-group-text bg-warning border border-warning"> Dob</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend"> <span class="input-group-text bg-warning border border-warning">Choose class</span></div>
+                                            <select class="form-control border border-warning choose-class" required="required">
+
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="input-group">
+
+                                            <select class="form-control border border-warning admit-in" required="required">
+                                                <option>School</option>
+                                                <option>Hostal</option>
+                                            </select>
+                                            <div class="input-group-append"> <span class="input-group-text bg-warning border border-warning">Admit In</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text bg-warning text-dark">Address</span>
+                                        </div>
+                                        <textarea name="address" class="form-control address"></textarea>
+                                    </div>
+
+
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-9 admit-notice">
+
+                                    </div>
+                                    <div class="col-3 ">
+                                        <button class="btn btn-danger text-light admit-now  " type="submit">Admit Now</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="modal  fade " id="fee-modal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                <h4>Check fees in classes</h4>
+                    <h6>please click on any one class</h6>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row  " id="show-fee">
+                        <div class="col-3  p-0 m-0">
+                            <ul class="nav nav-tabs     w-100" id="ull">
+
+
+                            </ul>
+                        </div>
+                        <div class="col-9  border border-dark  border-left-0 " name="col_9">
+                            <div class="tab-content" id="t-c" name="tab-con">
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                               <button class="btn btn-danger text-light cancel-fee-btn   "  type="submit">Close</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="admission-recipt">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    Admission Success
+                </div>
+                <div class="modal-body ">
+                    <h4><span class="s-n-d text-info"></span> <span >Thanks ! for admission.</span></h4>
+                   <h4><span > Your admission number is</span> <span class="add-noo text-info"> </span></h4>
+                </div>
+                <div class="modal-footer">
+
+                    <a href="../addmission_recipt/ad_recipt.html"><button class="btn btn-success text-light admit-now  " type="submit">Print admission recipt</button></a>
+                    <button class="btn btn-danger text-light cancel-PAR-btn   " data-dismiss="modal" type="submit">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal fade" id="find-student">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header bg-warning">
+                    <h6>Find Student</h6>
+                </div>
+                <div class="modal-body ">
+
+                    <input type="number" name="ad-no" required="required" class="form-control border border-warning f-ad-no" placeholder="Enter admission no">
+                </div>
+                <div class="modal-footer">
+
+                    <button class="btn btn-success text-light find-s-btn  " type="submit">Find Now</button>
+                    <button class="btn btn-danger text-light admit-now   " data-dismiss="modal" type="submit">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal fade" id="upload-signature">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header bg-warning">
+                    <h6> Signature's Upload </h6>
+                </div>
+                <div class="modal-body ">
+
+                    <div class="custom-file d-sign-input d-none">
+
+                        <input type="file" name="director-signature" style="cursor: pointer" accept="image/*" id="director" class="form-control custom-file-input">
+                        <label class="custom-file-label up_d" style="cursor: pointer" for="director">Upload Dirctor Signature</label>
+                    </div>
+                    <ul class="list-group d-none d-sign-con ">
+                        <div class=" d-flex flex-row">
+                            <li class="list-group-item border-0 d-sign">
+
+
+                            </li>
+                            <li class="list-group-item  ml-auto p-2 ">
+                                <i class="fas fa-trash d-sign-del " style="cursor: pointer" style="font-size: 40px"></i>
+                            </li>
+                        </div>
+
+                    </ul>
+                    <div class="custom-file p-sign-input d-none mt-3">
+
+                        <input type="file" name="Principal-signature" style="cursor: pointer" accept="image/*" id="principal" class="form-control custom-file-input">
+                        <label class="custom-file-label up_p" for="Principal" style="cursor: pointer">Upload Principal Signature</label>
+                    </div>
+                    <ul class="list-group d-none p-sign-con  mt-3 ">
+                        <div class=" d-flex flex-row">
+                            <li class="list-group-item border-0 p-sign">
+
+
+                            </li>
+                            <li class="list-group-item  ml-auto p-2 ">
+                                <i class="fas fa-trash p-sign-del" style="cursor: pointer" style="font-size: 40px"></i>
+                            </li>
+                        </div>
+
+                    </ul>
+
+
+                </div>
+                <div class="modal-footer">
+
+                    <button class="btn btn-success text-light up-p-btn  " type="submit">Upload</button>
+                    <button class="btn btn-danger text-light admit-now   " data-dismiss="modal" type="submit">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal fade" id="get-invoice">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header bg-warning">
+                    <h6>Get Invoice</h6>
+                </div>
+                <div class="modal-body ">
+
+                    <input type="number" name="ad-no" required="required" class="form-control border border-warning g-ad-no" placeholder="Enter admission no">
+
+                    <div class="input-group mt-2">
+                        <div class="input-group-prepend"> <span class="input-group-text bg-warning border border-warning">invoice Date</span></div>
+                        <input type="text" name="date" id="date-invoice" required="required" class="form-control border border-warning invoice-date" placeholder="dd/mm/yyyy">
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <button class="btn btn-success text-light get-invoice-btn  " type="submit">Get Now</button>
+                    <button class="btn btn-danger text-light" data-dismiss="modal" type="submit">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="find-no-student">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header bg-warning">
+                    <h6>Find Number of Student's in Class</h6>
+                </div>
+                <div class="modal-body ">
+
+                    <div class="input-group">
+                        <div class="input-group-prepend"> <span class="input-group-text bg-warning border border-warning">Choose class</span></div>
+                        <select class="form-control border border-warning choose-class" id="chcl" required="required">
+
+
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <button class="btn btn-success text-light find-s-no-btn  " type="submit">Find Now</button>
+                    <button class="btn btn-danger text-light find-no-s   " data-dismiss="modal" type="submit">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+<div id="confirm" class="modal hide fade">
+       <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+  <div class="modal-body">
+    Are you sure?
+  </div>
+  <div class="modal-footer">
+    <button type="button" data-dismiss="modal" class="btn btn-primary" id="confirm-btn">Confirm</button>
+    <button type="button" data-dismiss="modal" class="btn" id="cancel-btn">Cancel</button>
+  </div>
+    </div>
+           </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html oncontextmenu="window.alert('right click is not allowed');return false">
+
+<head>
+    <title>recipt</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="ad.css">
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/jquery-1.9.1.min.js"></script>
+
+    <script src="invoice_fee_r.js"></script>
+      <script src="../js/validation.js"></script>
+</head>
+
+<body class="p-10 ">
+    <div class="container-fluid mt-5 border border-dark pirnt-div" style="width: 50% ;position: relative">
+        <div class=" float-right" style="position: absolute; top: 0; right: 0%;"><span class="input-group-text bg-dark text-light admission-number"></span></div>
+        <div class="row ">
+
+            <div class="col-2  img border p-0 m-0 border-dark">
+            </div>
+            <div class="col-10  border border-dark d-flex flex-column justify-content-center align-items-center ">
+                <h2 class="school-name"></h2>
+                <span class="tag-line"></span>
+
+
+                <button class="btn btn bg-white  cell"></button>
+            </div>
+
+
+
+        </div>
+        <div class="row">
+
+            <div class="col-md-6 border border-dark ">
+                <div class="row">
+                    <div class=" col-6 p-0 pt-1 pl-1 m-0"> <span class=" ">
+                            <h6>STUDENT NAME :-</h6>
+                        </span></div>
+                    <div class=" col-6  p-0 pt-1 pl-1 m-0"> <span class="s-name"></span></div>
+                </div>
+            </div>
+            <div class="col-md-3 border border-dark ">
+                <div class="row">
+                    <div class=" col-6 p-0 pt-1 pl-1 m-0"> <span class=" ">
+                            <h6>CLASS :-</h6>
+                        </span></div>
+                    <div class=" col-6 p-0 pt-1 pl-1 m-0"> <span class="choose-class"></span></div>
+                </div>
+            </div>
+             <div class="col-md-3 border border-dark ">
+                <div class="row">
+                    <div class=" col-9 p-0 pt-1 pl-1 m-0"> <span class=" ">
+                            <h6>INVOICE NO. :-</h6>
+                        </span></div>
+                    <div class=" col-3 p-0 pt-1 pl-1 m-0"> <span class="invoice-no"></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-6 border border-dark ">
+                <div class="row">
+                    <div class=" col-6 p-0 pt-1 pl-1 m-0"> <span class=" ">
+                            <h6>FATHHER'S NAME :-</h6>
+                        </span></div>
+                    <div class=" col-6  p-0 pt-1 pl-1 m-0"> <span class="f-name"></span></div>
+                </div>
+            </div>
+            <div class="col-md-6 border border-dark ">
+                <div class="row">
+                    <div class=" col-6 p-0 pt-1 pl-1 m-0"> <span class=" ">
+                            <h6>DATE</h6>
+                        </span></div>
+                    <div class=" col-6 p-0 pt-1 pl-1 m-0"> <span class="invoice-date"></span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-7  border border-dark"></div>
+            <div class="col-5  border border-dark">
+                <div class="row">
+                    <div class=" col-9 p-0 pt-1 pl-1  m-0"> <span class="description ">
+
+                        </span></div>
+                    <div class=" col-3 p-0 pt-1 pl-1 m-0"> <span class="fee-d"></span></div>
+                </div>
+            </div>
+
+        </div>
+
+         <div class="row">
+            <div class="col-7  border border-dark"></div>
+            <div class="col-5  border border-dark">
+                <div class="row">
+                    <div class=" col-9 p-0 pt-1 pl-1 m-0"> <span class=" ">
+                            <h6>Total :-</h6>
+                        </span></div>
+                    <div class=" col-3 p-0 pt-1 pl-1 m-0"> <span class="amount"></span></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+
+            <div class="col-md-6 border border-dark d-flex flex-column justify-content-center align-items-center ">
+               <img src=" " width="35%"  class="d_img" height="50">
+                <span class=" "><h6>Director signnature-</h6></span>
+            </div>
+             <div class="col-md-6 border border-dark d-flex flex-column justify-content-center align-items-center ">
+               <img src=" " width="35%" class="p_img" height="50">
+                <span class=" "><h6>Principal signnature-</h6></span>
+            </div>
+        </div>
+
+        <div class="row">
+
+             <div class="col-12 border border-dark  d-flex flex-column justify-content-center align-items-center ">     <span class="address-r"></span></div>
+        </div>
+
+
+
+    </div>
+
+ <center class="centerr"><button class="btn btn-dark print-a-recipt mt-3" style="align: center"> PRINT ADMISSION RECIPT</button>
+    <a href="../success/welcome.html" ><button class="btn btn-dark cancel-a-recipt  mt-3" style="align: center"> Go to home page</button></a>
+    </center>
+
+</body>
+
+</html>

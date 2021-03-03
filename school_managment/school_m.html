@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/e8019bc349.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+
+
+</head>
+
+<body>
+    <div class="dark d-flex align-items-center">
+        <div class="container w-75 h-75 ">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul class="list-group bg-warning font-weight-bold">
+                        <li class="list-group-item bg-warning " id="li1">SCHOOL MANAGEMENT 1.0</li>
+                        <li class="list-group-item p-0 m-0">
+                            <img src="images/student_PNG6254111111.png" class="w-100">
+                        </li>
+                        <li class="list-group-item bg-warning text-center font-weight-bold">CONTACT US</li>
+                    </ul>
+                </div>
+                <div class="col-md-9">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item"><a href="#register" data-toggle="tab" class="nav-link active">Register</a></li>
+                        <li class="nav-item"><a href="#login" data-toggle="tab" class="nav-link ">login</a></li>
+                    </ul>
+                    <div class="tab-content py-2">
+                        <div class="tab-pane active" id="register">
+
+                            <form id="register-form">
+
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend ">
+                                        <span class="input-group-text bg-primary text-light border-0" id="input-group">Enter the school name..... </span>
+                                    </div>
+                                    <input class="form-control border bored-left-0" required="required" type="text" name="school name" id="school-name">
+                                </div>
+
+                                 <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-primary text-light border-0">Enter the tag line............... </span>
+                                    </div>
+                                    <input class="form-control border bored-left-0"  required="required" type="text" name="tag-line" id="tag-line">
+                                </div>
+                                 <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-primary text-light border-0">Enter the email id..............</span>
+                                    </div>
+                                    <input class="form-control border bored-left-0"  required="required"  type="email" name="email" id="email">
+                                </div>
+                                 <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-primary text-light border-0">Enter the website name..</span>
+                                    </div>
+                                    <input class="form-control border bored-left-0" type="text" name="website" id="website">
+                                </div>
+                                 <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-primary text-light border-0">Enter the mobile number</span>
+                                    </div>
+                                    <input class="form-control border bored-left-0"  required="required" type="number" name="mobile" id="mobile">
+                                </div>
+                                 <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-primary text-light border-0">Enter the phone number</span>
+                                    </div>
+                                    <input class="form-control border bored-left-0" type="number" name="phone" id="phone">
+                                </div>
+                                 <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-primary text-light border-0">Enter the address...............</span>
+                                    </div>
+                                     <textarea class="form-control border bored-left-0" type="text" name="address" id="address"></textarea>
+                                </div>
+
+                                <div class="alert float-left w-75 mt-3 p-1 d-none" id="message">
+                                <i class="fas fa-times close " data-dismiss="alert" ></i>
+                                </div>
+                                <button class="btn btn-warning float-right py-2 mt-2 font-weight-bold "   type="submit">Register now</button>
+
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="login">
+                            login
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
